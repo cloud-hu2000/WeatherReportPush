@@ -8,4 +8,9 @@
         insert into user
         values(#{phone},#{province},#{city})
     </insert>
+
+    <!--  public List<User> getAllUser();  -->
+    <select id="getAllUser" resultType="com.CloudHu.weather.entity.User">
+        select * from user
+    </select>
 </mapper>

@@ -38,10 +38,9 @@ public class User {
         this.city = city;
     }
 
-
     @Override
     public String toString() {
-        return "WeatherReport{" +
+        return "User{" +
                 "phone='" + phone + '\'' +
                 ", province='" + province + '\'' +
                 ", city='" + city + '\'' +

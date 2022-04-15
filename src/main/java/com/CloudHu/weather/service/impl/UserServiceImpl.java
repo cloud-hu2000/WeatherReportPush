@@ -58,11 +58,8 @@ public class UserServiceImpl implements UserService {
         String phone = map.get("phone").toString();
         String province = map.get("province").toString();
         String city = map.get("city").toString();
-        System.out.println(phone);
-        System.out.println(province);
-        System.out.println(city);
-        User user = new User(phone,province,city);
-        int result = userMapper.addUser(user);
+
+
 //        province=getPingYin(province);
 //        city=getPingYin(city);
 //
@@ -76,11 +73,17 @@ public class UserServiceImpl implements UserService {
 //        String kind=messages[1];
 //        String temperature=messages[2]+messages[3]+messages[4];
 //
+//
 //        result.put("url",urlStr);
 //        result.put("phone",phone);
 //        result.put("kind",kind);
 //        result.put("temperature",temperature);
-
+        User user = new User(phone,province,city);
+        int result = userMapper.addUser(user);
         return result;
+    }
+
+    public List<User> getAllUser(){
+        return userMapper.getAllUser();
     }
 }
