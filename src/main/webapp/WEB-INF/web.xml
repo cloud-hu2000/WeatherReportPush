@@ -34,4 +34,8 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+    <listener>
+        <listener-class>com.CloudHu.weather.listener.SendWeatherListener</listener-class>
+    </listener>
+
 </web-app>

@@ -12,6 +12,7 @@
 
     <!-- 扫描service包下所有使用注解的类型 -->
     <context:component-scan base-package="com.CloudHu.weather.service" />
+    <context:component-scan base-package="com.CloudHu.weather.utils" />
 
     <!-- 配置事务管理器 -->
     <bean id="transactionManager"
@@ -19,6 +20,7 @@
         <!-- 注入数据库连接池 -->
         <property name="dataSource" ref="dataSource" />
     </bean>
+
 
     <!-- 配置基于注解的声明式事务 -->
     <tx:annotation-driven transaction-manager="transactionManager" />

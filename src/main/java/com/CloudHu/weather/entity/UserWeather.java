@@ -1,17 +1,17 @@
 package com.CloudHu.weather.entity;
 
-public class User {
+public class UserWeather {
     private String phone;
     private String province;
     private String city;
 
-    public User(String phone, String province, String city) {
+    public UserWeather(String phone, String province, String city) {
         this.phone = phone;
         this.province = province;
         this.city = city;
     }
 
-    public User() {
+    public UserWeather() {
     }
 
     public String getPhone() {
